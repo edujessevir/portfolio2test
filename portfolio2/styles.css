@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Jura";
+    src: url(Jura-VariableFont_wght.ttf);
+}
+
+body{
+    height: 100vh;
+    background-color: #353535;
+}
+
+.rectanglebg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid #008CFF;
+    display: flex;
+    justify-content: center;
+}
+ /*header text*/
+.header{
+    font-family: "Jura";
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    font-size: 1rem;
+}
+/*Animation for the text*/
+#headertext {
+    color: white;
+    font-family: "Jura";
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+    typing 1.5s steps(30, end),
+    blink-caret .8s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white;}
+}
+
+#testing {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    color: white;
+    font-size: .75rem;
+    font-family: "Jura";
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+    typing 1.5s steps(30, end), 
+    blink-caret .8s step-end infinite;
+}
