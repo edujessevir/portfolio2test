@@ -19,7 +19,9 @@ body{
     border: 1px solid #008CFF;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
  /*header text*/
 .header{
     font-family: "Jura";
@@ -53,12 +55,27 @@ body{
     50% { border-color: white;}
 }
 
-#testing {
+#biography {
     position: absolute;
     top: 150px;
     left: 40px;
     color: white;
     font-size: .75rem;
+    font-family: "Jura";
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+    typing 1.5s steps(30, end)
+}
+
+#biography1{
+  position: absolute;
+    top: 125px;
+    left: 40px;
+    color: white;
+    font-size: .85rem;
     font-family: "Jura";
     overflow: hidden;
     border-right: .15em solid white;
@@ -70,16 +87,83 @@ body{
     blink-caret .8s step-end infinite;
 }
 
+#interests {
+  position: absolute;
+  top: 450px;
+  left: 40px;
+  color: white;
+  font-size: .75rem;
+  font-family: "Jura";
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+  typing 1.5s steps(30, end)
+}
 
+#interests1{
+  position: absolute;
+    top: 425px;
+    left: 40px;
+    color: white;
+    font-size: .85rem;
+    font-family: "Jura";
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+    typing 1.5s steps(30, end), 
+    blink-caret .8s step-end infinite;
+}
+
+#goals {
+  position: absolute;
+  top: 650px;
+  left: 40px;
+  color: white;
+  font-size: .75rem;
+  font-family: "Jura";
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+  typing 1.5s steps(30, end)
+}
+
+#goals1{
+  position: absolute;
+    top: 625px;
+    left: 40px;
+    color: white;
+    font-size: .85rem;
+    font-family: "Jura";
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+    typing 1.5s steps(30, end), 
+    blink-caret .8s step-end infinite;
+}
 
 /*Sliding picture cards*/
 
 .wrapper {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes typing3 {
+    from { width: 0px; opacity: 0; }
+    to { width: 920px; opacity: 1; }
 }
 
 .container {
@@ -87,6 +171,8 @@ body{
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
+    animation:
+    typing3 1.5s steps(3000, end)
 }
 
 .card {
@@ -174,4 +260,295 @@ input:checked + label .description {
 *{
     margin: 0;
     padding: 0;
+    
+    box-sizing: border-box;
 }
+
+/*navbar test*/
+
+.navMenu {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: inline-block;
+    width: 125px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: "Jura";
+  }
+  
+  .navMenu a:hover {
+    color: #008CFF;
+  }
+  
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #008CFF;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(165px);
+    transform: translateX(165px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(305px);
+    transform: translateX(305px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(425px);
+    transform: translateX(425px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+
+  /*Contact form design*/
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    resize: none;
+    font-family: "Jura";
+    color: white;
+    overflow: none;
+    scrollbar-color: #000000 black;
+  }
+  
+  .testingtesting {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Jura";
+    color: white;
+  }
+  
+  input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #008CFF;
+    border-radius: 25px;
+    cursor: pointer;
+    float: right;
+    font-family: "Jura";
+  }
+  
+  input[type=submit]:hover {
+    background-color: #252525;
+  }
+
+  @keyframes typing2 {
+    from { width: 0px; opacity: 0; }
+    to { width: 700px; opacity: 1; }
+}
+  
+  .container2 {
+    border-radius: 25px;
+    background-color: #000000;
+    padding: 20px;
+    border: 1px solid #008CFF;
+    position: absolute;
+    height: 450px;
+    width: 700px;
+    bottom: 25%;
+    left: 30%;
+    animation:
+    typing2 1.5s steps(300, end)
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  #subject{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #008CFF;
+  }
+
+  #email{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #008CFF;
+  }
+
+  #fname{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #008CFF;
+  }
+
+  #lname{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #008CFF;
+  }
+
+  ::placeholder {
+    color: white;
+    opacity: 70%;
+  }
+
+  #emailthing{
+    font-family: "Jura";
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    left: 30%;
+  }
+
+  #emailthing2{
+    font-family: "Jura";
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 4px;
+    left: 30%;
+  }
+
+  #phone{
+    font-family: "Jura";
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    left: 58%;
+  }
+
+  #phone2{
+    font-family: "Jura";
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 4px;
+    left: 58%;
+  }
+
+  #github {
+    font-family: "Jura";
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 4px;
+    left: 45%;
+  }
+  a{
+    text-decoration: none !important;
+    color: white;
+  }
+
+  /*back and forth buttons*/
+
+  .backbutton{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Jura";
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    cursor: pointer;
+  }
+
+  .forwardbutton{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Jura";
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    cursor: pointer;
+  }
+
+  #timetest1{
+    color: white;
+    font-family: "Jura";
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+  }
+
+
+  #prevedu{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    color: white;
+    font-size: .75rem;
+    font-family: "Jura";
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+    typing 1.5s steps(30, end)
+  }

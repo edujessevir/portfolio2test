@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="rectanglebg">
+
+        <div class="header">
+            <h1 id="headertext">Contact me.</h1>
+        </div>
+        <!--Navigation bar-->
+        <nav class="navMenu">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+            <div class="dot"></div>
+        </nav>
+
+        <!--Contact form-->
+        <div class="container2">
+            <form action="mailto:jesse.virtanen2@edu.salpaus.fi">
+              <div class="row2">
+                <div class="col-25">
+                  <label for="fname" class="testingtesting">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." class="testingtesting"
+                   required autocomplete="name"><br><br>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="col-25">
+                  <label for="lname" class="testingtesting">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="testingtesting"
+                   required autocomplete="family-name"><br><br>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="col-25">
+                  <label for="email" class="testingtesting">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email.."
+                     class="testingtesting" required autocomplete="email"><br><br>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="col-25">
+                  <label for="subject" class="testingtesting">Subject</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"
+                   required></textarea>
+                </div>
+              </div>
+              <div class="row2">
+                <input type="submit" id="submit" value="Send" class="testingtesting">
+              </div>
+            </form>
+          </div>
+
+          <h4 id="emailthing">My email:</h4>
+          <p id="emailthing2">jesse.virtanen2@edu.salpaus.fi</p>
+
+          <h4 id="phone">My Phone Number:</h4>
+          <p id="phone2">+358401714437</p>
+
+          <h4 id="github"><a href="https://github.com/edujessevir" target="_blank"
+             rel="noopener" rel="noreferrer">Click here for my Github</a></h4>
+<!--back and forth buttons-->
+<div class="backnforthbutton">
+  <button type="button" id="backbutton" class="backbutton" onclick="goBack()">Back</button>
+  <button type="button" id="forwardbutton" class="forwardbutton" onclick="goForward()">Forward</button>
+</div>
+<!--testing time-->
+<div class="timetest">
+  <h4 id="timetest1"></h4>
+</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
